@@ -1,0 +1,152 @@
+.indent {
+  margin-bottom: 2rem;
+}
+
+.indent h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.indent p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #3f0f0f;
+  color: #090422;
+}
+
+a {
+  color: #090422;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: table;
+  clear: both;
+}
+
+.card {
+  border-radius: 0.5rem;
+  height: calc(100vh - 60px);
+  margin: auto;
+  margin-top: 60px;
+  width: 95%;
+  background-color: #001f45e6;
+  color: white;
+  .btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 12px;
+    color: white;
+    background: #fc5a5a;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 28px;
+    transition: .3s ease-in;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-body {
+    display: grid;
+    gap: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+      width: 300px;
+      height: 200px;
+    }
+  }
+
+  .card{
+    .btn{
+      background-color: #cccccc;
+    }
+  }
+
+  .card:hover .btn{
+    background: #fc5a5a;
+  }
+
+  .card-img-group-up {
+    grid-row-start: 1;
+  }
+
+  .card-img-group-center {
+    grid-row-start: 2;
+  }
+
+  .card-img-group-down {
+    grid-row-start: 3;
+  }
+
+  .card-text {
+    grid-column: 2 / 5;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 500px;
+      height: 320px;
+      text-align: start;
+      display: inline;
+    }
+  }
+  .image{
+    order:1;
+  }
+  .card-text{
+    order:2;
+  }
+  .card-img-group-up {
+    display: none;
+  }
+  .card-img-group-down {
+    display: none;
+  }
+  .card-img-group-center {
+    text-align: center;
+    display: inline;
+  }
+}
+
+@media(max-width: 767px) {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 300px;
+      height: 200px;
+      text-align: start;
+      display: inline;
+    }
+  }
+  .image{
+    order:1;
+  }
+  .card-text{
+    order:2;
+  }
+  .card-img-group-up {
+    display: none;
+  }
+  .card-img-group-down {
+    display: none;
+  }
+  .card-img-group-center {
+    text-align: center;
+    display: inline;
+  }
+  .card {
+    height: 500px;
+  }
+}

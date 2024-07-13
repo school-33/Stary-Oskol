@@ -1,0 +1,30 @@
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: #090422;
+    color: #ffffff;
+}
+
+header {
+    padding: 30px;
+    width: 100%;
+    font-weight: bold;
+    background-color: #ed3535ac;
+    position: fixed;
+    z-index: 1000; 
+}
+
+hr {
+    border-top: 2px solid #ed3535ac;
+}
+
+.indent {
+    margin-top: 50px; 
+}
+
+.dropdown{
+    margin-right: 25px;
+}
