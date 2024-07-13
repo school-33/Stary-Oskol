@@ -1,2 +1,2 @@
 # Stary-Oscol
-https://jester-fool.github.io/Stary-Oscol/
+https://school-33.github.io/Stary-Oskol/
